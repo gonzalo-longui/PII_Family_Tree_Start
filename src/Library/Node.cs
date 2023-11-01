@@ -7,6 +7,7 @@ namespace Library
     public class Node
     {
         private int number;
+        public Person person;
 
         private List<Node> children = new List<Node>();
 
@@ -24,9 +25,10 @@ namespace Library
             }
         }
 
-        public Node(int number)
+        public Node(int number, Person person1)
         {
             this.number = number;
+            this.person = person1;
         }
 
         public void AddChildren(Node n)
